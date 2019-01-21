@@ -54,10 +54,14 @@ median(total_steps_per_day$total_steps)
 
 ###1.Make a time series plot (type="l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
 
-```{r plot of average daily pattern,echo=TRUE}
+```{r,echo=TRUE}
 avg_steps_per_day<-activity_data[,list(avg_steps=mean(steps,na.rm = TRUE)),by=interval]
 avg_steps_per_day
 
+```
+
+
+```{r time series plot,echo=TRUE}
 plot(x=avg_steps_per_day$interval,y=avg_steps_per_day$avg_steps,xlab = " 5 minute interval",ylab = "average number of steps taken(across all days)",type="l")
 ```
 
