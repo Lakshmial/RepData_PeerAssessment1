@@ -85,11 +85,13 @@ avg_steps_per_day
 ## 288:     2355 1.0754717
 ```
 
+
+
 ```r
 plot(x=avg_steps_per_day$interval,y=avg_steps_per_day$avg_steps,xlab = " 5 minute interval",ylab = "average number of steps taken(across all days)",type="l")
 ```
 
-![](figure/plot of average daily pattern-1.png)<!-- -->
+![](figure/time series plot-1.png)<!-- -->
 
 ###2.Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
